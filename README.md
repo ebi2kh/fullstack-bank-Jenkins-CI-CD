@@ -1,5 +1,40 @@
 # :coin: Full Stack Bank :dollar:
 
+## Jenkins Integration Report for Full Stack Bank Project
+
+### Overview
+
+I have added a Jenkins pipeline to automate the CI/CD process for the Full Stack Bank project. This integration aims to streamline the development process, ensuring that all tests are passed and the application is deployed automatically.
+
+### Jenkinsfile
+
+A `Jenkinsfile` has been added to the root of the project. This file contains the pipeline configuration, which includes stages for installing dependencies, running tests, and deploying the application.
+
+#### Key Stages
+
+1. **Install Dependencies**: Ensures all necessary dependencies are installed.
+2. **Run Tests**: Executes both integration and E2E tests.
+3. **Build**: Builds the application for production.
+4. **Deploy**: Deploys the application to the production server.
+
+### Automation Steps
+
+- **Pull from SCM**: Jenkins pulls changes from the source control management (Git).
+- **Build and Test**: The application is built, and tests are run to ensure stability.
+- **Deployment**: On successful build and test, the application is deployed.
+
+### Benefits
+
+- **Automated Testing**: Ensures code quality and functionality with automated tests.
+- **Continuous Deployment**: Updates are deployed automatically, reducing manual effort and error.
+- **Feedback Loop**: Developers receive immediate feedback on their commits.
+
+### Conclusion
+
+The Jenkins integration into the Full Stack Bank project sets a robust foundation for continuous integration and deployment, enhancing the overall efficiency and reliability of the development workflow. Thanks to [@raphaelalmeidamartins](https://github.com/raphaelalmeidamartins) for the great project.
+
+---
+
 ![Preview](./screenshots/login.png)
 
 ## :page_with_curl: About/Sobre
@@ -11,6 +46,7 @@ Full stack digital wallet application developed in Next.js and Node.js with Type
 
 **Note:** the application is currently only in Brazilian Portuguese, I want to add an English translation soon.
 <br />
+
 </details>
 
 <details>
@@ -18,6 +54,7 @@ Full stack digital wallet application developed in Next.js and Node.js with Type
 
 Aplicação full stack dockerizada de carteira digital desenvolvida em Next.js e Node.js com TypeScript.
 <br />
+
 </details>
 
 ## :man_technologist: Developed Skills//Habilidades desenvolvidas
@@ -25,30 +62,30 @@ Aplicação full stack dockerizada de carteira digital desenvolvida em Next.js e
 <details>
   <summary markdown="span"><strong>:us: English</strong></summary><br />
 
-* Develop a frontend application with the Netx.js framework and TypeScript
-* Use Sass and CSS Modules for frontend styling
-* Develop a RESTful API in Node.js with Express.js and TypeScript
-* Use an ORM
-* Use a PostgreSQL database
-* Document the API with Open API and the Swagger UI framework
-* Implement backend integration tests using Mocha.js, Chai.js and Sinon.js with 100% coverage
-* implement E2E tests with the Cypress framework in conjunction with the Testing Library
-* Dockerize the application using Docker Compose
+- Develop a frontend application with the Netx.js framework and TypeScript
+- Use Sass and CSS Modules for frontend styling
+- Develop a RESTful API in Node.js with Express.js and TypeScript
+- Use an ORM
+- Use a PostgreSQL database
+- Document the API with Open API and the Swagger UI framework
+- Implement backend integration tests using Mocha.js, Chai.js and Sinon.js with 100% coverage
+- implement E2E tests with the Cypress framework in conjunction with the Testing Library
+- Dockerize the application using Docker Compose
 <br />
 </details>
 
 <details>
   <summary markdown="span"><strong>:brazil: Português</strong></summary><br />
 
-* Desenvolver uma aplicação frontend com o framework Netx.js e TypeScript
-* Utilizar Sass e CSS Modules para a estilização do frontend
-* Desenvolver uma API RESTful em Node.js com Express.js e TypeScript
-* Utilizar um ORM
-* Utilizar um banco de dados PostgreSQL
-* Documentar a API com Open API e o framework Swagger UI
-* Implementar testes de integração no backend utilizando Mocha.js, Chai.js e Sinon.js com 100% de cobertura
-* mplementar testes E2E com o framework Cypress em conjunto com a Testing Library
-* Dockerizar a aplicação utilizando Docker Compose
+- Desenvolver uma aplicação frontend com o framework Netx.js e TypeScript
+- Utilizar Sass e CSS Modules para a estilização do frontend
+- Desenvolver uma API RESTful em Node.js com Express.js e TypeScript
+- Utilizar um ORM
+- Utilizar um banco de dados PostgreSQL
+- Documentar a API com Open API e o framework Swagger UI
+- Implementar testes de integração no backend utilizando Mocha.js, Chai.js e Sinon.js com 100% de cobertura
+- mplementar testes E2E com o framework Cypress em conjunto com a Testing Library
+- Dockerizar a aplicação utilizando Docker Compose
 <br />
 </details>
 
@@ -57,41 +94,41 @@ Aplicação full stack dockerizada de carteira digital desenvolvida em Next.js e
 <details>
   <summary markdown="span"><strong>:us: English</strong></summary><br />
 
-* Mobile First
-* BEM (Block-Element-Modifier) ​​in CSS
-* Object-Oriented Programming (OOP)
-* SOLID Principles
+- Mobile First
+- BEM (Block-Element-Modifier) ​​in CSS
+- Object-Oriented Programming (OOP)
+- SOLID Principles
 <br />
 </details>
 
 <details>
   <summary markdown="span"><strong>:brazil: Português</strong></summary><br />
 
-* Mobile First
-* Padrão BEM (Block-Element-Modifier) no CSS
-* Programação Orientada a Objetos (POO)
-* Princípios de SOLID
+- Mobile First
+- Padrão BEM (Block-Element-Modifier) no CSS
+- Programação Orientada a Objetos (POO)
+- Princípios de SOLID
 <br />
 </details>
 
 ## :hammer_and_wrench: Stacks
 
-* TypeScript
-* React.js
-* Next.js
-* Sass
-* Cypress
-* Testing Library
-* Node.js
-* Express.js
-* Sequelize.js
-* PortgreSQL
-* Swagger UI
-* Mocha.js
-* Chai.js
-* Sinon.js
-* Docker
-* Docker Compose
+- TypeScript
+- React.js
+- Next.js
+- Sass
+- Cypress
+- Testing Library
+- Node.js
+- Express.js
+- Sequelize.js
+- PortgreSQL
+- Swagger UI
+- Mocha.js
+- Chai.js
+- Sinon.js
+- Docker
+- Docker Compose
 
 ## :hammer_and_wrench: Installation and execution/Instalação e execução
 
@@ -116,9 +153,9 @@ npm run compose:up
 
 By running the command above, three containers will be started:
 
-* ng_frontend - mapped on the port 3000
-* ng_backend - mapped on the port 3001
-* ng_db - mapped on the port 3002
+- ng_frontend - mapped on the port 3000
+- ng_backend - mapped on the port 3001
+- ng_db - mapped on the port 3002
 
 They are the front-end, back-end and the database, respectively. After the containers starts, you can enter the <http://localhost:3000> address in your browser to see the application running.
 
@@ -152,9 +189,9 @@ npm run compose:up
 
 Executando o comando acima, será criada uma rede de três containers:
 
-* ng_frontend - mapeado na porta 3000
-* ng_backend - mapeado na porta 3001
-* ng_db - mapeado na pa porta 3002
+- ng_frontend - mapeado na porta 3000
+- ng_backend - mapeado na porta 3001
+- ng_db - mapeado na pa porta 3002
 
 Se tratam da aplicação frontend, backend e o banco de dados, respectivamente. Depois que eles estiverem rodando, basta acessar o endereço <http://localhost:3000> no seu navegador para utilizar a aplicação.
 
@@ -174,6 +211,7 @@ npm run compose:down
 
 With the application running, access the <http://localhost:3001/docs> address in your browser to see the API documentation implemented with Swagger UI.
 <br />
+
 </details>
 
 <details>
@@ -181,6 +219,7 @@ With the application running, access the <http://localhost:3001/docs> address in
 
 Com a aplicação em execução, basta acessar o endereço <http://localhost:3001/docs> no seu navegador para visualizar a documentação implementada com o Swagger UI.
 <br />
+
 </details>
 
 ![API documentation/Documentação da API](./screenshots/api-docs.png)
@@ -200,6 +239,7 @@ npm run test: integration
 
 **Note:** to run the integration tests, it is not necessary for the application to be running, as the interaction with the database is mocked and the tests start an instance of the API before being started.
 <br />
+
 </details>
 
 <details>
@@ -213,6 +253,7 @@ npm run test:integration
 
 **Observação:** para rodar os testes de integração, não é necessário que a aplicação esteja rodando, pois a interação com o banco de dados é mockada e os testes iniciam uma instância da API antes de serem iniciados.
 <br />
+
 </details>
 
 ![Cobertura dos testes de integração](./screenshots/integration-coverage.png)
@@ -278,6 +319,7 @@ npm run test
 
 **Note:** this command runs the E2E tests without the graphic interface.
 <br />
+
 </details>
 
 <details>
@@ -291,6 +333,7 @@ npm run test
 
 **Observação:** esse comando roda os testes E2E sem a interface gráfica.
 <br />
+
 </details>
 
 ## :iphone: Screenshots/Capturas de tela
