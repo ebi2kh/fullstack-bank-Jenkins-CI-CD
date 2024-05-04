@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3"
 
 services:
   frontend:
@@ -48,7 +48,7 @@ services:
     user: postgres
     environment:
       - POSTGRES_PASSWORD=123456
-    restart: 'always'
+    restart: "always"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready", "-d", "db_prod"]
       timeout: 10s
